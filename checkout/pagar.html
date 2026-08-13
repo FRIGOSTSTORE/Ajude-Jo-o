@@ -148,7 +148,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .check-grande { font-size: 4.5rem; margin-bottom: 1rem; }
     #tela-obrigado h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: .5rem; }
     #tela-obrigado p  { color: #888; font-size: .9rem; }
-  </style>
+  
+/* Correção: valores dos botões sempre pretos no celular */
+.btn-valor,
+.btn-valor:visited,
+.btn-valor:focus,
+.btn-valor:active,
+.btn-valor.ativo {
+  color: #000 !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.btn-valor {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+</style>
 </head>
 <body>
 <div class="page">
